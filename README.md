@@ -19,8 +19,8 @@ Clinical information extraction from unstructured electronic health records is e
 
 - **Demonstration Selection**: Multiple methods including BM25, TF-IDF, embedding-based similarity, and domain matching
 - **Prompt Generation**: Two architectures with entity-specific descriptions and optimized final instructions:
-  - **Base Prompts**: Essential task instructions with descriptions for 8 clinical entity types and format-specific guidance
-  - **Full Prompts**: Enhanced structure with entity grouping, confusing cases guidance, and detailed annotation guidelines
+  - **Base Prompts** (`prompt_formats/base_prompts/`): Essential task instructions with descriptions for 8 clinical entity types and format-specific guidance
+  - **Full Prompts** (`prompt_formats/full_prompts/`): Enhanced structure with entity grouping, confusing cases guidance, and detailed annotation guidelines
 
 - **LLM Inference**: Integration with LLaMA models via Ollama API with optimized parameters
 - **Output Parsing**: Robust parsing of various output formats (entity lists, tagged text, JSON)
@@ -41,19 +41,25 @@ Clinical information extraction from unstructured electronic health records is e
 
 Our comprehensive evaluation across 2,113 hematology-oncology notes and 397 MIMIC-IV discharge summaries demonstrates that optimized in-context learning represents a significant advancement over traditional encoder-based fine-tuning. When demonstrations are selected using lexical retrieval methods, particularly BM25, ICL consistently outperforms fine-tuning across multiple evaluation scenarios. In moderate-resource settings with 200 annotated examples, ICL achieves up to 6.5 percentage points higher F1-scores compared to fine-tuning, challenging the conventional wisdom that fine-tuning becomes superior with moderate amounts of labeled data.
 
-<img src="figures/Figure1.png" alt="Performance comparison across annotation budgets" width="50%">
+<div align="center">
+<img src="figures/Figure1.png" alt="Performance comparison across annotation budgets" width="75%">
+</div>
 
 *Performance comparison between in-context learning and fine-tuning across varying annotation budgets and demonstration selection methods.*
 
 The study reveals that ICL's effectiveness stems primarily from sophisticated demonstration selection rather than prompt engineering. While incorporating detailed entity definitions and annotation guidelines into prompts yields only marginal improvements, the choice of demonstration selection method dramatically impacts performance. BM25-based lexical retrieval consistently outperforms embedding-based approaches, TF-IDF, and random selection, achieving up to 9.4 percentage points improvement in macro F1-scores over random demonstration selection. This finding suggests that lexical similarity better captures the relevant contextual patterns for clinical information extraction than semantic embedding approaches.
 
-<img src="figures/Figure2.png" alt="Domain-specific performance variation" width="50%">
+<div align="center">
+<img src="figures/Figure2.png" alt="Domain-specific performance variation" width="75%">
+</div>
 
 *Domain-specific performance variation in in-context learning across different clinical categories.*
 
 Domain-specific analysis reveals that ICL exhibits remarkable data efficiency when demonstrations are aligned with the target domain. In scenarios where both training and demonstration selection are restricted to specific clinical domains (such as particular note types or cancer categories), ICL achieves performance levels that match or exceed fine-tuning on the complete dataset while requiring substantially fewer labeled samples. This finding has significant implications for clinical NLP deployment, where domain-specific annotation can be both expensive and time-consuming.
 
-<img src="figures/Figure3.png" alt="Cross-domain performance analysis" width="50%">
+<div align="center">
+<img src="figures/Figure3.png" alt="Cross-domain performance analysis" width="75%">
+</div>
 
 *In-domain vs. cross-domain performance comparison between ICL and encoder fine-tuning.*
 
