@@ -66,7 +66,7 @@ Domain-specific analysis reveals that ICL exhibits remarkable data efficiency wh
 Cross-institutional evaluation provides compelling evidence for ICL's superior generalization capabilities. When transferring between Seoul National University Hospital and MIMIC-IV datasets, ICL demonstrates better robustness to distributional shifts compared to fine-tuning. In SNUH→MIMIC transfer, ICL achieves macro F1-score of 0.524 vs. fine-tuning's 0.461, while MIMIC→SNUH transfer shows even larger performance gaps (0.565 vs. 0.449). These results suggest that ICL's reliance on demonstration examples rather than learned parameters makes it inherently more adaptable to new institutional contexts, addressing a critical challenge in clinical NLP deployment.
 
 <div align="center">
-<img src="figures/Figure4.png" alt="Cross-institutional robustness" width="75%">
+<img src="figures/Figure4.png" alt="Cross-institutional robustness" width="50%">
 </div>
 
 *Cross-institutional performance of in-context learning under varying number of demonstrations.*
