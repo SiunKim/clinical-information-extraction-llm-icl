@@ -1,0 +1,6 @@
+Patient Symptom and Condition: Annotate current physical manifestations and conditions reported by the patient or observed during clinical examination. Extract the core symptom terms without general expressions or negations, focusing on clinically meaningful presentations.
+Ex) "심한 두통이 있음" → "두통": Extracts core symptom without intensity qualifiers
+Ex) "설사는 조금 있다" → "설사": Captures the primary symptom without auxiliary expressions
+Ex) "facial edema, dyspnea" → "facial edema", "dyspnea": Identifies multiple distinct symptoms when separated by punctuation
+Ex) Negation exclusion: "열감도 없다" → "열감": Extracts core symptom term without negation markers
+*Note: Exclude clinically assessed diagnoses (e.g., "HTN", "gastric cancer"), which should be classified as Confirmed or Working Diagnosis entities.

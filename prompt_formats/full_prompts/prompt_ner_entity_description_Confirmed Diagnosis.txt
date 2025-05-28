@@ -1,0 +1,4 @@
+Confirmed Diagnosis: Annotate definitively established medical conditions, including historical diagnoses and currently active conditions. This includes both specific disease names and broader diagnostic classifications. Exclude qualifiers about diagnostic uncertainty or ongoing investigation, but include relevant modifiers about stage, location, or severity when they form part of the complete diagnosis.
+Ex) "Type 2 diabetes mellitus with neuropathy" → "Type 2 diabetes mellitus with neuropathy": Captures complete diagnostic entity including complication
+Ex) "h/o gastric adenocarcinoma" → "gastric adenocarcinoma": Extracts core diagnosis without history marker
+Ex) "ASO AAA, infrarenal (partial thrombus, IMA from aneurysm)" → "ASO AAA, infrarenal (partial thrombus, IMA from aneurysm)": Includes anatomical and descriptive details that form part of the complete diagnosis

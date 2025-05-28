@@ -1,0 +1,1 @@
+Use the exact expressions from the original text when recognizing entities.Annotate all instances of an entity, even if it appears multiple times.Annotate entities in the order they appear in the original text.Stick strictly to the information provided in the text without making assumptions about the patient's condition.

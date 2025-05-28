@@ -1,0 +1,9 @@
+Test and Measurement: Annotate specific laboratory test names and medical examinations performed on the patient. Each Test and Measurement entity must have at least one corresponding Test Result entity, forming essential pairs in the annotation process.
+Ex) "hemoglobin 13.5 g/dL" → "hemoglobin": Identifies test name with numerical result
+Ex) "WBC/Hb/Plt 7.5/13.2/450" → "WBC", "Hb", "Plt": Extracts individual test names corresponding to their respective values
+Ex) "CSR -/-/-" → "C", "S", "R": Captures individual test names while "-", "-", "-" represents corresponding test results
+Ex) "chest X-ray: no active lung lesion" → "chest X-ray": Extracts the imaging test name with corresponding findings
+Ex) "Normal karyotype" → "karyotype": Extracts test name with "Normal" as its test result
+* Key Notes:
+- Must always pair with Test Result entities (one-to-one or one-to-many relationships possible)
+- Exclude from Test and Measurement therapeutic procedures without specific measurement results

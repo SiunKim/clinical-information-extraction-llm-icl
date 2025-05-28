@@ -1,0 +1,5 @@
+Medication: Annotate drug names and medical compounds used for treatment- this includes both specific drug names and drug group classifications (e.g., "혈압약" or "HTN med"). Exclude administration methods, dosage forms, release specifications, and frequency details from entity mention spans. When both commercial and generic names appear, annotate both as separate medication entities.
+Ex) "Tylenol (acetaminophen)" → "Tylenol", "acetaminophen": Captures both brand and generic names for complete drug reference
+Ex) "FOLFOX (5-FU + Leucovorin + Oxaliplatin)" → "FOL", F", "OX", "5-FU", "Leucovorin", "Oxaliplatin": Identifies both protocol abbreviations and individual drug components
+Ex) Dosage/formulation exclusion: "Metformin 500mg Extended Release" → "Metformin": Extracts core drug name without administrative details
+*Key Note: Exclude generic terms without specific drug information (e.g., "med", 'medicaiton')

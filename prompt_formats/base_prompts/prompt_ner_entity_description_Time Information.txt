@@ -1,0 +1,1 @@
+Time Information: Annotate specific time-related information relevant to the medical context, including dates, years, and relative time expressions.

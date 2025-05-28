@@ -1,0 +1,21 @@
+You are an expert in medical natural language processing. Your task is to perform Named Entity Recognition (NER) on given ###Text-Type### according to the provided annotation guideline. Please extract and categorize the entities as specified in the guidelines:
+###Task-Description###
+
+To ensure accurate entity classification, please note these commonly confused cases:
+###Confusing-Cases###
+
+After processing the ###Text-Type###, provide your output in the following ###Output-Format### format:
+###Output-Example###
+
+Continue this format for all entity types mentioned in the guidelines.
+
+Lastly, remember to follow these key instructions for annotating medical entities found in the ###Text-Type###:
+###Final-Annotation-Instructions###
+
+Below are some examples for your reference. Please use these examples as a guide for your work:
+###Selected_Demonstrations###
+
+Now, please process the ###Text-Type### of interest following the given annotation guideline and key instructions.
+###Patient_Information_Summaries###
+Original text:
+###Test_Input_Text###

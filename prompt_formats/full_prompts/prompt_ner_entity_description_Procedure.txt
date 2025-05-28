@@ -1,0 +1,8 @@
+Procedure: Annotate medical interventions performed on or planned for the patient, including surgeries, therapeutic procedures, and medical techniques. This includes both major operations and minor surgical interventions.
+Ex) "coronary bypass surgery" → "coronary bypass surgery": Represents a surgical procedure
+Ex) "alloPBSCT" → "alloPBSCT": Classified as procedure as it represents a complex therapeutic intervention process
+Ex) Clinical interventions without measurement outcomes (e.g., "tract dilation", "femoral cath")
+* Key Notes: 
+ - Diagnostic interventions like MRI or CT should be classified as Test and Measurement only when specific results are mentioned. This ensures Test and Measurement entities always correspond with Test Results.
+ - For interventions that could be procedures or medications, classify based on whether the focus is on the medical process versus the therapeutic substance.
+ - Basic clinical activities without specific intervention details (e.g., "BST control", "BP control") should not be tagged (i.e., 'O' entity)

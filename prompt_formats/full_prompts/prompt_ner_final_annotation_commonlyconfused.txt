@@ -1,0 +1,21 @@
+1. Confirmed Diagnosis vs. Working Diagnosis:
+ - By default, classify established medical conditions as Confirmed Diagnosis unless explicitly marked with uncertainty
+ - When a diagnosis contains both confirmed and uncertain components (e.g., "Pancreatic cancer, r/o SMA invasion"), split into separate entities: Known component as Confirmed Diagnosis ("Pancreatic cancer") + Uncertain component as Working Diagnosis ("SMA invasion")
+*Key Note: Uncertainty indicators include not only explicit markers (r/o, R/O) but also phrases suggesting causation uncertainty (e.g., "due to", "caused by", "suspected", "에 의한 가능성 존재", "잘 감별되지 않는 상황")
+
+2. Patient Symptom and Condition vs. Confirmed Diagnosis:
+ - Classify as Patient Symptom:
+  1) Current physical manifestations with clear anatomical references (e.g., "Lt shoulder mass")
+  2) Temporary presentations without formal diagnostic terminology
+  3) Direct patient complaints
+ - Classify as Confirmed Diagnosis:
+  1) Established medical terminology (e.g., "Lymphoid crisis", "functional neutropenia")
+  2) Chronic or established conditions even when presenting acutely (e.g., "DVT", "obstructive jaundice")
+  3) Formally recognized medical conditions with specific diagnostic terms
+*Key Note: When in doubt, presence of formal medical terminology suggests Confirmed Diagnosis
+
+3. Test Result vs. Patient Symptom and Condition/Confirmed Diagnosis:
+ - Classify as Test Result: values directly associated with specific tests or objective measurements with clear test associations
+ - Classify as Patient Symptom and Condition: subjective complaints and current physical states not tied to specific measurements 
+ - Classify as Confirmed Diagnosis: relatively well-established medical conditions
+*Key Note: Test Results should be paired with a specific Test and Measurement entity

@@ -1,0 +1,5 @@
+Time Information: Annotate temporal expressions that provide context for medical events, treatments, and patient conditions. This includes specific dates, time ranges, durations, and relative time references that are clinically relevant.
+Ex) "4/27 - 5/21" → "4/27 - 5/21": Captures continuous time ranges as a single entity
+Ex) "2주 전부터" → "2주 전": Extracts relative time reference
+Ex) "2023년 3월 입원" → "2023년 3월": Identifies specific historical timepoint
+Ex) "POD #3" → "POD #3": Captures post-operative timeline reference

@@ -1,0 +1,2 @@
+Ensure all entity tags are properly closed with matching end tags
+Finally, express the recognized entities by adding tags to the original text. Be careful not to modify the existing text, and avoid adding separate comments other than the tagged text.

@@ -1,0 +1,1 @@
+Intervention and Measures: This entity includes medical interventions, diagnostic tests, and treatments. It covers procedures performed or planned, various medical tests and their results, as well as medications prescribed to the patient.

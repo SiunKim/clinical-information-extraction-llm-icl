@@ -1,0 +1,15 @@
+Test Result: Annotate the outcomes or findings that are directly associated with Test and Measurement entities. Each Test Result must correspond to a specific Test and Measurement entity, representing measurement values, status indicators, or descriptive findings.
+Ex) "hemoglobin 13.5 g/dL" → "13.5 g/dL": Captures numerical result with units
+Ex) "WBC/Hb/Plt 7.5/13.2/450" → "7.5", "13.2", "450": Extracts individual numerical values corresponding to respective tests
+Ex) "CSR -/-/-" → "-", "-", "-": Identifies individual status indicators for each test
+Ex) "조직검사 결과 SD on chest, PD on liver" → "SD", "PD": Captures multiple progression status results from single examination
+*Key Notes:
+- Must always be associated with a Test and Measurement entity (many-to-one relationship possible)
+- Test Results can appear as:
+  - Numerical values (e.g., "7.5", "13.5 g/dL", "450 K/μL")
+  - Positive/negative status (e.g., "+", "-", "positive", "negative")
+  - Descriptive findings (e.g., "no active lesion", "mild infiltration")
+  - Normal/abnormal assessments (e.g., "normal", "abnormal", "within normal limits")
+  - Cancer response evaluations (e.g., "mCR", "PD")
+- When the same test appears multiple times, each instance should be annotated separately
+- Include complete result phrases for descriptive findings without breaking apart meaningful descriptions

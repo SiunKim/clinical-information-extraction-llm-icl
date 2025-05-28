@@ -1,0 +1,1 @@
+Finally, organize the recognized entities into a Python list-dictionary format. Refer to the examples for the specific structure.

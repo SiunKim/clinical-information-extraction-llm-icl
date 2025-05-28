@@ -1,0 +1,9 @@
+Working Diagnosis: Annotate conditions that are currently being evaluated or ruled out in the current medical encounter. Include anatomical and descriptive details that form part of the complete diagnostic assessment, but exclude rule-out markers and uncertainty indicators from the entity spans.
+Ex) "r/o bile duct invasion" → "bile duct invasion": Excludes rule-out marker
+Ex) "R/O EGC IIc." → "EGC IIc.": Captures diagnostic entity only
+*Key Notes:
+- Common indicators (not included in entity spans):
+  - "r/o", "R/O" (rule out)
+  - "suspected"
+  - "probable"
+  - Negation markers

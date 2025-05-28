@@ -1,0 +1,1 @@
+Symptoms and Diagnosis: This entity encompasses the patient's reported symptoms, confirmed medical conditions, and preliminary diagnoses. It covers both acute and chronic health issues identified by the patient or medical professionals.

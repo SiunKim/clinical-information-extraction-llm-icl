@@ -1,0 +1,1 @@
+Medication: Annotate the drug name only, excluding dosage and frequency details.

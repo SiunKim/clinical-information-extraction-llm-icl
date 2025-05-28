@@ -1,0 +1,1 @@
+Patient Symptom and Condition: Include all symptoms and conditions reported by the patient, both acute and chronic.
