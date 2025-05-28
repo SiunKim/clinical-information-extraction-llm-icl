@@ -6,6 +6,24 @@ This repository contains the implementation code for the paper "Optimized in-con
 
 Clinical information extraction from unstructured electronic health records is essential for healthcare analytics but traditionally requires extensive manual annotation and model fine-tuning. Large language models (LLMs) with in-context learning (ICL) offer a potentially more efficient alternative. This study systematically compares ICL using LLaMA-3.3-70B against encoder-based fine-tuning across varying annotation budgets, clinical domains, and institutions using 2,113 hematology-oncology notes from Seoul National University Hospital and 397 MIMIC-IV discharge summaries.
 
+## Requirements
+
+This project was developed and tested with **Python 3.10.10**. Install the required dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Key Dependencies
+- **PyTorch** (>=2.0.0): Deep learning framework for fine-tuning models
+- **Transformers** (>=4.47.1): Hugging Face library for BERT/RoBERTa models
+- **scikit-learn** (>=1.5.0): Machine learning utilities and evaluation metrics
+- **LangChain** (>=0.3.7): Framework for LLM applications and prompt management
+- **rank-bm25** (0.2.2): BM25 implementation for demonstration selection
+- **sentence-transformers** (3.3.1): Embedding-based similarity computation
+
+For complete dependencies, see `requirements.txt`.
+
 ## Key Findings
 
 - **ICL outperforms fine-tuning** in moderate-resource conditions (up to 6.5 percentage points improvement in F1-score with 200 examples)
